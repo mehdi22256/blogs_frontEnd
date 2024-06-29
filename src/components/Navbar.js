@@ -42,10 +42,10 @@ const Navbar = () => {
           )}
           <div
             className={`flex flex-row justify-end items-center ${
-              isLogged ? `pl-[500px]` : `pl-[600px]`
+              isLogged ? `pl-[400px]` : `pl-[500px]`
             } gap-x-14`}
           >
-            <li className="relative bottom-3 text-3xl cursor-pointer">
+            {/* <li className="relative bottom-3 text-3xl cursor-pointer">
               <form>
                 <FiSearch
                   onClick={() => setIsSearch(!isSearch)}
@@ -61,7 +61,7 @@ const Navbar = () => {
                   }  absolute right-[1px] bg-white w-96 h-10 rounded-lg`}
                 />
               </form>
-            </li>
+            </li> */}
             {isLogged ? (
               <Logout />
             ) : (
@@ -77,13 +77,13 @@ const Navbar = () => {
 
       {/* mobile */}
       <nav>
-        <div className="lg:hidden relative flex flex-row justify-between px-3 py-7 items-center h-10">
-          <div>
+        <div className="lg:hidden relative flex flex-row-reverse justify-between px-3 py-7 items-center h-10">
+          {/* <div>
             <FiSearch
               onClick={() => setIsSearch(!isSearch)}
               className="text-3xl cursor-pointer "
             />
-          </div>
+          </div> */}
           <div>
             <RxHamburgerMenu
               onClick={() => setIsBurgerOpen(!isBurgerOpen)}
